@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockKeep</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="header-sidebar">
+        <a href="#">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="logo"
+          >
+            <path
+              d="M8 7V6C8 3.79 9.79 2 12 2C14.21 2 16 3.79 16 6V7H20C20.55 7 21 7.45 21 8V20C21 21.1 20.1 22 19 22H5C3.9 22 3 21.1 3 20V8C3 7.45 3.45 7 4 7H8ZM10 6V7H14V6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6ZM5 9V20H19V9H5ZM12 14C11.45 14 11 14.45 11 15C11 15.55 11.45 16 12 16C12.55 16 13 15.55 13 15C13 14.45 12.55 14 12 14Z"
+              fill="#a0aec0"
+            />
+          </svg>
+          Stock <span>Keep</span>
+        </a>
+      </div>
+      <div class="nav">
+        <a href="#" class="active"
+          ><span class="icon">&#x1F4CA;</span> Dashboard</a
+        >
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <span class="icon">&#x1F4C6;</span><span>Transaksi</span>
+            <span>&#x25BC;</span>
+          </div>
+          <div class="dropdown-content">
+            <a href="#"><span class="icon">&#x1F4E6;</span> Barang Masuk</a>
+            <a href="#"><span class="icon">&#x1F4E4;</span> Barang Keluar</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <span class="icon">&#x1F4D1;</span><span>Master Barang</span>
+            <span>&#x25BC;</span>
+          </div>
+          <div class="dropdown-content">
+            <a href="#"><span class="icon">&#x1F4C3;</span> Informasi Barang</a>
+            <a href="#"><span class="icon">&#x1F4CB;</span> Jenis Barang</a>
+          </div>
+        </div>
+      </div>
+      <div class="suplier">
+        <a href="#"><span class="icon">&#x1F4E9;</span> Suplier</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <h1>Informasi Barang Masuk</h1>
+        <div class="buttons">
+          <button class="tambah_barang">Tambah Barang</button>
+          <!-- <button class="">Register</button> -->
+        </div>
+      </div>
+      <div class="table-container">
+        <div class="card-hedader">
+          <h2 class="font-semibold text-lg">Barang Masuk</h2>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Cari barang..." />
+          <button>Cari</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID Barang</th>
+              <th>Tanggal</th>
+              <th>Jenis Barang</th>
+              <th>Nama Barang</th>
+              <th>Nama Suplier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BRG001</td>
+              <td>2024-06-20</td>
+              <td>Pakaian</td>
+              <td>Kemeja</td>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <td>BRG002</td>
+              <td>2024-06-21</td>
+              <td>Alat Tulis</td>
+              <td>Pensil</td>
+              <td>Jane Smith</td>
+            </tr>
+            <tr>
+              <td>BRG003</td>
+              <td>2024-06-22</td>
+              <td>Elektronik</td>
+              <td>Smartphone</td>
+              <td>Michael Johnson</td>
+            </tr>
+            <tr>
+              <td>BRG004</td>
+              <td>2024-06-23</td>
+              <td>Makanan</td>
+              <td>Biskuit</td>
+              <td>Sarah Williams</td>
+            </tr>
+            <tr>
+              <td>BRG005</td>
+              <td>2024-06-24</td>
+              <td>Peralatan Rumah Tangga</td>
+              <td>Panci</td>
+              <td>David Brown</td>
+            </tr>
+            <tr>
+              <td>BRG006</td>
+              <td>2024-06-25</td>
+              <td>Buku</td>
+              <td>Ensiklopedia</td>
+              <td>Emily Davis</td>
+            </tr>
+            <tr>
+              <td>BRG007</td>
+              <td>2024-06-26</td>
+              <td>Pakaian</td>
+              <td>Celana</td>
+              <td>Robert Martinez</td>
+            </tr>
+            <tr>
+              <td>BRG008</td>
+              <td>2024-06-27</td>
+              <td>Alat Tulis</td>
+              <td>Penghapus</td>
+              <td>Laura Thompson</td>
+            </tr>
+            <tr>
+              <td>BRG009</td>
+              <td>2024-06-28</td>
+              <td>Elektronik</td>
+              <td>Tablet</td>
+              <td>William Wilson</td>
+            </tr>
+            <tr>
+              <td>BRG010</td>
+              <td>2024-06-29</td>
+              <td>Makanan</td>
+              <td>Coklat</td>
+              <td>Amanda Lee</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../Home/script.js"></script>
+  </body>
+</html>
